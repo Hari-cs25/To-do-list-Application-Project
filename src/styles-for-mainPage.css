@@ -1,0 +1,60 @@
+.mainPage{
+    width:100vw;
+    position:relative;
+    transition-duration:0.20s;
+}
+
+.titleBar{
+    font-weight:500;
+    padding:10px 0px;
+    display:flex;
+    height:54px;
+
+}
+
+.titleSection{
+    border:1px solid rgb(101, 101, 101);
+    width:100%;
+    height: 25px;
+      text-align: center;
+    padding-top:2px;
+}
+
+.menuSection{
+    width:auto;
+    height:auto;
+    border-radius:5px;
+   display:flex;
+}
+.menuImg{
+    width:25px;
+    height:20px;
+}
+/*.menuSection:active{
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.5);
+}*/
+.menuSection button{
+   background:  rgb(233, 233, 233);
+  padding: 0;
+  border:1px solid gray;
+  cursor: pointer;
+        border-radius:3px;
+        width:33px;
+        transition:1s;
+}
+.menuSection button:active{
+      outline: 1px solid rgb(21, 21, 21);
+      border-radius:3px;
+}
+
+.contentSpace {
+    min-height:10px;
+    width:100vw;
+    height:auto;
+    padding-left:30px;
+    padding-top:15px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+

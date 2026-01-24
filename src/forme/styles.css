@@ -1,0 +1,97 @@
+.formeContainer{
+    height:380px;
+    width:400px;
+    font-family: system-ui, sans-serif;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    padding-top: 20px;
+    border-radius: 3px;
+    border:1.5px solid rgb(111, 111, 111);
+    background-color:rgb(86, 86, 86);
+    position: fixed;
+    top:0;
+    right:0;
+     box-shadow: 0 0 0 9999px rgba(87, 87, 87, 0.5);
+
+}
+
+.btncontainer{
+    border:1px solid rebeccapurple;
+}
+
+input{
+    height:30px;
+    margin:10px;
+    margin-top: 10px;
+}
+
+select{
+    margin:10px;
+    font-style:italic;
+    cursor: pointer;
+}
+
+.btncontainer{
+    display:flex;
+    padding-left:5px;
+    padding-right:5px;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    border: none;
+}
+
+button{
+    width: 80px;
+    height:25px;
+    color:white;
+    border-radius:2px;
+    border:none;
+    background-color:gray;
+    font-weight:600;
+    text-align: center;
+    cursor: pointer;
+}
+
+button:active{
+  transform: scale(0.9);
+}
+button:hover{
+    opacity:0.8;
+}
+
+.addbtn{
+    background-color: rgb(0, 63, 163);
+}
+
+.cancelbtn{
+    background-color: red;
+}
+
+.cancelCon{
+    display:flex;
+    justify-content: end;
+    row-gap: 0px;
+    padding-bottom:0px;
+    margin-bottom: 0px;
+    padding-right: 5px;
+    position:absolute;
+    top:1px;
+    right:0;
+}
+
+.cancelCon img{
+     width:18px;
+ height:15px;
+ background-color: rgb(221, 221, 221);
+ border-radius: 2px;
+ box-sizing:content-box;
+ padding:2px;
+ border:0.5px solid gray;
+}
+.cancelCon img:active{
+        outline:1px solid black;
+}
+.cancelCon img:hover{
+background-color: rgb(247, 121, 121); 
+}
