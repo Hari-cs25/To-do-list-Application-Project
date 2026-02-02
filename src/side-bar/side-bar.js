@@ -1,5 +1,4 @@
 import{getTodo} from '../logic-module.js';
-import{getTodos} from '../factory.js';
 import addicon from '../menu_logos/add.png';
 import createicon from '../menu_logos/createicon.png';
 import closeicon from '../menu_logos/close.png';
@@ -64,22 +63,6 @@ sidebarContents.appendChild(sec1createpro)
 
 const ol =document.createElement('ol')
 projectlist.appendChild(ol);
-    console.log('started...')
-    console.log(getTodos().length)
-
-   export const renderProjects = (length)=>{
-
-        for(let i=0;  i<length;  ++i){
-         console.log('inside loop:',getTodos().length-2)
-
-            const li = document.createElement('li')
-            li.textContent = getTodo(i+1).title;
-            ol.appendChild(li)
-        }
-
-    }
-   
-projectlist.appendChild(ol);
 
 const txt3 = document.createElement('span')
 txt3.textContent = 'To Do List'
@@ -88,13 +71,26 @@ featuresTitle.appendChild(txt3)
 const cancelIcon = document.createElement('img')
 cancelIcon.src = closeicon;
 featuresTitle.appendChild(cancelIcon)
+cancelIcon.addEventListener('mouseenter', function(){
+    toolTip.style = 'background-color:rgba(14, 14, 14, 0.98); color:white;'
+})
+cancelIcon.addEventListener('mouseout', function(){
+    toolTip.style = 'background-color: rgba(0, 0, 0, 0); color:rgba(0, 0, 0, 0);'
+})
 
-/*cancelIcon.addEventListener('click', function(){
+const toolTip = document.createElement('div')
+toolTip.className = 'cancelToolTip'
+sidebar.appendChild(toolTip);
+toolTip.textContent = 'close sidebar'
+
+
+/*const body = document.querySelector('body');
+body.addEventListener('click', remoBody())
+
+function remoBody(){
     sidebar.remove();
-    menuSection.appendChild(menuBtn);
+}*/
 
-})*/
-
-export{sidebar, cancelIcon, sec1add, sec1createpro}; // to mainpage.js
+export{sidebar, cancelIcon, sec1add, sec1createpro, ol, toolTip}; // to mainpage.js
 
 

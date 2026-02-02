@@ -10,9 +10,11 @@
         top:0px;
         bottom:0px;
         padding-left:2px;
-        background-color:rgba(219, 219, 219, 0.856);
+        background-color:rgba(236, 236, 236, 0.856);
         transition-duration:0.50s;
-        box-shadow: 0 0 0 9999px rgba(87, 87, 87, 0.5);
+        box-shadow: 1px 0 0 rgba(57, 57, 57, 0.5);
+        margin-right:3px;
+       /* box-shadow: 0 0 0 9999px rgba(87, 87, 87, 0.5);*/
 }
 
 .sec1{
@@ -112,3 +114,19 @@ li:hover{
     background-color:rgba(232, 232, 232, 0.98);
     box-shadow: 2px 2px 8px rgba(0, 0, 10, 0.3);
 }
+
+.cancelToolTip{
+    position:absolute;
+    top: 31px;
+    left: 150px;
+    border-radius: 2px;
+    width: 90px;
+    font-size :13px;
+    text-align:center;
+    height:20px;
+    font-weight:600;
+background-color: rgba(0, 0, 0, 0);
+    color:rgba(0, 0, 0, 0);
+    transition:0.15s;
+}
+

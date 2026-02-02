@@ -18,11 +18,11 @@ const complete = document.createElement('select')
 complete.className = 'completeFeild'
 
 const op1 = document.createElement('option')
-op1.textContent = true
+op1.textContent = false
 complete.appendChild(op1)
 
 const op2 = document.createElement('option')
-op2.textContent = false
+op2.textContent = true
 complete.appendChild(op2)
 
 const date = document.createElement('input')
@@ -48,16 +48,40 @@ const cancelCon = document.createElement('div');
 cancelCon.className = 'cancelCon'
 cancelCon.appendChild(cancelIconF)
 
+const priarityoption = document.createElement('select');
+priarityoption.placeholder = 'Prioroty of Task';
+
+const titleOption = document.createElement('option');
+titleOption.textContent = 'Select Priority';
+titleOption.id = 'titleOption';
+titleOption.value = '';
+titleOption.disabled = true;
+titleOption.selected = true;
+titleOption.hidden = true;
+priarityoption.appendChild(titleOption);
+
+const p1 = document.createElement('option');
+const p2 = document.createElement('option');
+const p3 = document.createElement('option');
+p1.textContent = 'High';
+p2.textContent = 'Medium';
+p3.textContent = 'Low';
+
+priarityoption.appendChild(p1)
+priarityoption.appendChild(p2)
+priarityoption.appendChild(p3)
+
 btnContainer.appendChild(addbtn)
 btnContainer.appendChild(cancelbtn)
 
 formContainer.appendChild(cancelCon)
 formContainer.appendChild(title)
 formContainer.appendChild(discription)
+formContainer.appendChild(priarityoption)
 formContainer.appendChild(complete)
 formContainer.appendChild(date)
 formContainer.appendChild(btnContainer)
 
 //title.appendChild(cancelIconF);
-export {formContainer, cancelIconF, addbtn, cancelbtn, title, discription, complete, date};
+export {formContainer, cancelIconF, addbtn, cancelbtn, title, discription, complete, date, priarityoption};
 

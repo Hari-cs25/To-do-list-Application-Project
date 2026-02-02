@@ -1,18 +1,17 @@
 let currentId = 1;
- let todos = [];
+ //let todos = [];
+ //import {project} from './script.js';
  
-const createTodo = function(id, title='Task 1', discription='no discription', complete=false, date='24/01/2026' ){
+export const createTodo = function(obj, title, discription, complete, date, priority ){
 
-    const todo = { id, title, discription, complete, date};
-    todos.push(todo);
+    const index = obj.todos.length;
+    const todo = { title, discription, complete, date, priority, index};
+    obj.todos.push(todo);
     return todo;
 
 }
 
-function getTodos(){
-    return todos;
-}
 
 
-export{createTodo, currentId, todos, getTodos};
+
 
