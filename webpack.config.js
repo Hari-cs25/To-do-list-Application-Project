@@ -8,13 +8,14 @@ module.exports = {
     output: {
 
         filename: 'final.js',
+        publicPath: './',
         path: path.resolve(__dirname , 'Dist'),
         clean: true,
     },
 
     plugins: [
         new HtmlWebpackPlugin({
-            template:'./src/index.html'
+            tembplate:'./src/index.html'
         })
     ],
     
