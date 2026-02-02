@@ -7,9 +7,9 @@ module.exports = {
     entry: './src/script.js',
     output: {
 
-        filename: 'final.js',
+        filename: 'bundle.js',
         publicPath: './',
-        path: path.resolve(__dirname , 'Dist'),
+        path: path.resolve(__dirname , 'docs'),
         clean: true,
     },
 
