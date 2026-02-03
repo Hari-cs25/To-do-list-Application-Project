@@ -33,11 +33,12 @@ module.exports = {
     },
     
     devServer: {
-
-    static: './docs',
-    open: true,
-    hot: true,
-    watchFiles: ['src/**/*'],
+     static: {
+    directory: path.join(__dirname, 'docs'),
+  },
+  open: true,
+  hot: true,
+  port: 8080,
     
   }
 

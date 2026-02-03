@@ -1,4 +1,5 @@
 .formeContainer{
+
     height:380px;
     width:400px;
     font-family: system-ui, sans-serif;
@@ -13,7 +14,7 @@
     background-color:rgb(238, 238, 238);
     position: fixed;
     top:100px;
-    right:150px;
+    right:30vw;
      box-shadow: 0 0 0 9999px rgba(87, 87, 87, 0.5);
 
 }
