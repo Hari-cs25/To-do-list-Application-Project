@@ -8,6 +8,9 @@ const masterContainer = document.querySelector('#masterContainer');
 const mainPage = document.createElement('div');
 mainPage.className = 'mainPage';
 
+console.log(masterContainer)
+console.log(mainPage)
+
 const titleBar = document.createElement('div');
 titleBar.className = 'titleBar';
 

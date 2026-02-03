@@ -15,8 +15,8 @@ module.exports = {
 
     plugins: [
         new HtmlWebpackPlugin({
-            tembplate:'./src/index.html'
-        })
+            template:'./src/index.html',
+        }),
     ],
     
      module: {
@@ -34,7 +34,7 @@ module.exports = {
     
     devServer: {
 
-    static: './dist',
+    static: './docs',
     open: true,
     hot: true,
     watchFiles: ['src/**/*'],
