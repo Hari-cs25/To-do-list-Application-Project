@@ -1,56 +1,54 @@
-import {createTodo} from './factory.js';
-import { discription } from './forme/Forme.js';
+import { createTodo } from "./factory.js";
 
+const addTodo = function (
+  obj,
+  title = "Task 1",
+  discription = "no discription",
+  complete = false,
+  date = "24/01/2026",
+  priority = "High",
+) {
+  if (title === "") title = "Undefined Task";
+  if (priority === "") priority = "High";
 
- const addTodo = function(obj, title='Task 1', discription='no discription', complete=false, date='24/01/2026', priority = 'High'){
-    
-  if(title === "")
-    title = 'Undefined Task'
-  if(priority === "")
-    priority = 'High'
+  return createTodo(obj, title, discription, complete, date, priority);
+};
 
-   return createTodo(obj, title, discription, complete, date, priority);
-}
+const getTodo = function (obj, position) {
+  return obj.todos[position - 1];
+};
 
- const getTodo = function(obj, position){
+const deleteTodo = function (obj) {
+  return obj.todos.splice(obj.index, 1)[0];
+};
 
-    return obj.todos[position-1];
+const clearMemory = function (obj) {
+  obj.todos.length = 0;
+};
 
-}
- 
-const deleteTodo = function(obj){
+const toggleTodo = function (obj) {
+  obj.completed = !obj.completed;
+};
 
- return obj.todos.splice(id-1, 1)[0];
+const editTodo = function (
+  todo,
+  title = todo.title,
+  discription = todo.discription,
+  completed = todo.completed,
+  date = todo.date,
+  priority = todo.priority,
+) {
+  if (title === "") title = todo.title;
 
-}
+  if (discription === "") discription = todo.discription;
 
-const clearMemory = function (obj){
-    
-    obj.todos.length = 0;
-}
+  if (date === "") date = todo.date;
 
-const toggleTodo = function(obj){
+  todo.title = title;
+  todo.completed = completed;
+  todo.date = date;
+  todo.priority = priority;
+  return todo;
+};
 
-     obj.completed = !obj.completed;
-
-}
-
-const editTodo = function(todo, title = todo.title, discription=todo.discription, completed = todo.completed, date = todo.date, priority = todo.priority){
-    if(title === "")
-        title = todo.title;
-    
-    if(discription === "")
-        discription = todo.discription;
-    
-    if(date === "")
-        date = todo.date;
-
-    todo.title = title;
-    todo.completed = completed;
-    todo.date = date;
-    return todo;
-}
-
-
-
-export{addTodo, getTodo, deleteTodo, clearMemory, toggleTodo, editTodo};
+export { addTodo, getTodo, deleteTodo, clearMemory, toggleTodo, editTodo };

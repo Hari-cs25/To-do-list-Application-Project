@@ -1,97 +1,96 @@
-.mainPage{
-    width:100vw;
-    position:relative;
-    transition-duration:0.20s;
+.mainPage {
+  width: 100vw;
+  position: relative;
+  transition-duration: 0.2s;
 }
 
-.titleBar{
-    font-weight:500;
-    padding:10px 0px;
-    display:flex;
-    height:54px;
-
+.titleBar {
+  font-weight: 500;
+  padding: 10px 0px;
+  display: flex;
+  height: 54px;
 }
 
-.titleSection{
-    border:1px solid rgb(101, 101, 101);
-    width:100%;
-    height: 25px;
-      text-align: center;
-    padding-top:2px;
+.titleSection {
+  border: 1px solid rgb(101, 101, 101);
+  width: 100%;
+  height: 25px;
+  text-align: center;
+  padding-top: 2px;
 }
 
-.menuSection{
-    width:auto;
-    height:auto;
-    border-radius:5px;
-   display:flex;
+.menuSection {
+  width: auto;
+  height: auto;
+  border-radius: 5px;
+  display: flex;
 }
-.menuImg{
-    width:25px;
-    height:20px;
+.menuImg {
+  width: 25px;
+  height: 20px;
 }
 
-.menuSection button{
-   background:  rgb(233, 233, 233);
+.menuSection button {
+  background: rgb(233, 233, 233);
   padding: 0;
-  border:1px solid gray;
+  border: 1px solid gray;
   cursor: pointer;
-        border-radius:3px;
-        width:33px;
-        transition:1s;
+  border-radius: 3px;
+  width: 33px;
+  transition: 1s;
 }
-.menuSection button:active{
-      outline: 1px solid rgb(0, 0, 0);
-      border-radius:3px;
+.menuSection button:active {
+  outline: 1px solid rgb(0, 0, 0);
+  border-radius: 3px;
 }
 
 .contentSpace {
-    min-height:10px;
-    width:100vw;
-    height:auto;
-    padding-left:30px;
-    padding-top:15px;
-    display:flex;
-    flex-direction:column;
-    gap:10px;
+  min-height: 10px;
+  width: 100vw;
+  height: auto;
+  padding-left: 30px;
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.menuToolTip{
-     position:absolute;
-    top: 38px;
-    left: 3px;
-    border-radius: 2px;
-    width: 61px;
-    font-size :13px;
-    text-align:center;
-    height:20px;
-    font-weight:600;
-    background-color: rgb(0, 0, 0, 0);
-    color:rgb(0, 0, 0, 0);
-    transition:0.4s;
+.menuToolTip {
+  position: absolute;
+  top: 38px;
+  left: 3px;
+  border-radius: 2px;
+  width: 61px;
+  font-size: 13px;
+  text-align: center;
+  height: 20px;
+  font-weight: 600;
+  background-color: rgb(0, 0, 0, 0);
+  color: rgb(0, 0, 0, 0);
+  transition: 0.4s;
 }
 
-#dataClearBtn{
-    height:auto;
-    width: 100px;
-    font-size:11px;
-    padding: 5px 5px;
-    font-weight: 600;
-    text-align:center;
-    border-radius:20px;
-    font-style:italic;
-    position:absolute;
-    top:40px;
-    right: 10px;
-    color:white;
-    background-color:rgb(48, 48, 48);
+#dataClearBtn {
+  height: auto;
+  width: 100px;
+  font-size: 11px;
+  padding: 5px 5px;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 20px;
+  font-style: italic;
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  color: white;
+  background-color: rgb(48, 48, 48);
 }
 
-#dataClearBtn:hover{
-    /*transform: scale(1);*/
-    opacity:0.78;
+#dataClearBtn:hover {
+  /*transform: scale(1);*/
+  opacity: 0.78;
 }
 
-#localStorageClearBtn{
-    background-color:red;
+#localStorageClearBtn {
+  background-color: red;
 }
